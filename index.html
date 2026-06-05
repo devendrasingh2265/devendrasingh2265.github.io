@@ -1,87 +1,858 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+
+    <title>Devendra Kumar Singh | Architect</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
-        /* Modern, responsive styling setup */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #74abe2, #5563c1);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #333;
+        body{
+            font-family:'Inter',sans-serif;
+            background:#f5f7fa;
+            color:#1f2937;
+            line-height:1.6;
         }
 
-        /* Centered greeting card container */
-        .greeting-card {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            text-align: center;
-            max-width: 450px;
-            width: 90%;
+        .container{
+            max-width:1200px;
+            margin:40px auto;
+            background:#fff;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
         }
 
-        .icon {
-            font-size: 3.5rem;
-            margin-bottom: 15px;
+        .header{
+            background:#0f172a;
+            color:white;
+            padding:40px 50px;
         }
 
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 10px;
-            color: #2c3e50;
+        .header h1{
+            font-size:42px;
+            margin-bottom:10px;
         }
 
-        p {
-            font-size: 1.1rem;
-            color: #666;
-            line-height: 1.5;
+        .header .title{
+            font-size:22px;
+            color:#cbd5e1;
+            margin-bottom:20px;
         }
+
+        .contact{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+            font-size:14px;
+        }
+
+        .contact span{
+            color:#e2e8f0;
+        }
+
+        .content{
+            display:grid;
+            grid-template-columns:320px 1fr;
+        }
+
+        .sidebar{
+            background:#f8fafc;
+            padding:40px 30px;
+            border-right:1px solid #e5e7eb;
+        }
+
+        .main{
+            padding:40px;
+        }
+
+        .section{
+            margin-bottom:40px;
+        }
+
+        .section-title{
+            font-size:18px;
+            font-weight:700;
+            text-transform:uppercase;
+            letter-spacing:1px;
+            margin-bottom:20px;
+            color:#0f172a;
+            border-bottom:2px solid #0f172a;
+            padding-bottom:8px;
+        }
+
+        .skill{
+            background:#e2e8f0;
+            padding:8px 12px;
+            border-radius:6px;
+            margin-bottom:10px;
+            font-size:14px;
+        }
+
+        .summary{
+            color:#475569;
+            font-size:15px;
+        }
+
+        .company{
+            font-size:22px;
+            font-weight:700;
+            color:#0f172a;
+        }
+
+        .role{
+            font-size:17px;
+            font-weight:600;
+            margin-top:5px;
+        }
+
+        .duration{
+            color:#64748b;
+            margin-bottom:15px;
+        }
+
+        .experience{
+            margin-bottom:35px;
+        }
+
+        .experience ul{
+            padding-left:20px;
+        }
+
+        .experience li{
+            margin-bottom:10px;
+        }
+
+        .education-card{
+            margin-bottom:20px;
+        }
+
+        .education-card h4{
+            font-size:16px;
+        }
+
+        .education-card p{
+            color:#64748b;
+        }
+
+        .badge{
+            display:inline-block;
+            padding:8px 12px;
+            background:#dbeafe;
+            color:#1e40af;
+            border-radius:6px;
+            margin:5px;
+            font-size:13px;
+        }
+
+        @media(max-width:900px){
+
+            .content{
+                grid-template-columns:1fr;
+            }
+
+            .sidebar{
+                border-right:none;
+                border-bottom:1px solid #e5e7eb;
+            }
+
+            .header h1{
+                font-size:30px;
+            }
+        }
+
     </style>
+
 </head>
+
 <body>
 
-<div class="greeting-card">
-    <!-- The icon and text will update dynamically via JavaScript -->
-    <div class="icon" id="greeting-icon">👋</div>
-    <h1 id="greeting-text">Hello!</h1>
-    <p id="greeting-subtext">Welcome to your dashboard. Have an amazing day ahead!</p>
+<div class="container">
+
+    
+    <div class="header">
+
+        <h1>Devendra Kumar Singh</h1>
+
+        <div class="title">
+            Java Architect | Enterprise Payments, Integration & AI-Driven Modernization
+        </div>
+
+        <div class="contact">
+
+            <span>📍 Noida, India</span>
+
+            <span>✉️ devendrasingh2265@gmail.com</span>
+
+            <span>
+            linkedin.com/in/devendrasingh2265
+        </span>
+
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <!-- SIDEBAR START -->
+
+        <aside class="sidebar">
+
+            <div class="section">
+
+                <div class="section-title">
+                    Core Expertise
+                </div>
+
+                <div class="skill">Java 17</div>
+                <div class="skill">Spring Boot</div>
+                <div class="skill">Spring Integration</div>
+                <div class="skill">IBM MQ</div>
+                <div class="skill">ISO 20022</div>
+                <div class="skill">FedNow</div>
+                <div class="skill">Fedwire</div>
+                <div class="skill">CBPR+</div>
+                <div class="skill">Kafka</div>
+                <div class="skill">gRPC</div>
+                <div class="skill">AWS</div>
+                <div class="skill">Kubernetes</div>
+
+            </div>
+
+            <div class="section">
+
+                <div class="section-title">
+                    AI Tools
+                </div>
+
+                <div class="skill">GitHub Copilot</div>
+                <div class="skill">OpenAI Codex</div>
+                <div class="skill">Claude Code</div>
+                <div class="skill">Open Code</div>
+                <div class="skill">RAG Frameworks</div>
+
+            </div>
+
+            <div class="section">
+
+                <div class="section-title">
+                    Domain Expertise
+                </div>
+
+                <div class="badge">Payments</div>
+                <div class="badge">Banking</div>
+                <div class="badge">Capital Markets</div>
+                <div class="badge">AML</div>
+                <div class="badge">Microservices</div>
+                <div class="badge">Distributed Systems</div>
+                <div class="badge">Architecture</div>
+
+            </div>
+
+        </aside>
+
+        <!-- MAIN CONTENT START -->
+
+        <main class="main">
+
+            <div class="section">
+
+                <div class="section-title">
+                    Professional Summary
+                </div>
+
+                <div class="summary">
+
+                    Dedicated IT professional with 12+ years of experience
+                    delivering enterprise-grade platforms across banking,
+                    capital markets, real-time payments and distributed systems.
+
+                    Specialized in FedNow, Fedwire Funds Service,
+                    ISO 20022, Spring Integration, IBM MQ,
+                    event-driven architectures and AI-assisted software delivery.
+
+                </div>
+
+            </div>
+
+            <!-- ====================================== -->
+            <!-- TECHNICAL EXPERTISE -->
+            <!-- ====================================== -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    Technical Expertise
+                </div>
+
+                <p>
+                    <strong>Languages:</strong>
+                    Java 17, Core Java, J2EE, Java Concurrency,
+                    Functional Programming, Multithreading
+                </p>
+
+                <p>
+                    <strong>Payments:</strong>
+                    FedNow, Fedwire Funds Service,
+                    ISO 20022, CBPR+, pacs.008,
+                    pacs.009, XML, XSD, JAXB
+                </p>
+
+                <p>
+                    <strong>Integration:</strong>
+                    Spring Boot, Spring Integration,
+                    IBM MQ, Kafka, Pulsar,
+                    JMS, Event Driven Architecture,
+                    Enterprise Integration Patterns
+                </p>
+
+                <p>
+                    <strong>Databases:</strong>
+                    PostgreSQL, MySQL,
+                    SQL Server, DynamoDB,
+                    MongoDB, Redis,
+                    Cassandra, Elasticsearch
+                </p>
+
+
+                <p>
+                    <strong>Cloud & DevOps:</strong>
+                    AWS, Docker,
+                    Kubernetes, OpenShift,
+                    Jenkins, Maven, Helm
+                </p>
+
+
+                <p>
+                    <strong>Security:</strong>
+                    Spring Security,
+                    JWT, TLS, Mutual TLS,
+                    Secure Messaging
+                </p>
+
+            </div>
+            
+            <!-- ====================================== -->
+            <!-- WORK EXPERIENCE -->
+            <!-- ====================================== -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    Professional Experience
+                </div>
+
+                <!-- PERSISTENT -->
+
+                <div class="experience">
+
+                    <div class="company">
+                        Persistent Systems Ltd
+                    </div>
+
+                    <div class="role">
+                        Architect
+                    </div>
+
+                    <div class="duration">
+                        Jan 2024 – Present | Noida, India
+                    </div>
+
+                    <p>
+                        Leading architecture, modernization, payment processing,
+                        and enterprise integration initiatives for global banking
+                        and fintech clients.
+                    </p>
+
+                </div>
+
+                <!-- MIZUHO JAPAN -->
+
+                <div class="experience">
+
+                    <div class="role">
+                        Client: Mizuho Japan
+                    </div>
+
+                    <div class="duration">
+                        Jan 2026 – Present
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Leading modernization of a business-critical
+                            reconciliation platform into scalable
+                            microservices architecture.
+                        </li>
+
+                        <li>
+                            Designing target-state architecture using
+                            Java and Spring Boot.
+                        </li>
+
+                        <li>
+                            Leveraging GitHub Copilot and SASVA
+                            to accelerate modernization,
+                            documentation and development productivity.
+                        </li>
+
+                        <li>
+                            Developing QA automation tools
+                            to reduce manual testing effort
+                            and improve quality.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- MIZUHO AMERICAS -->
+
+                <div class="experience">
+
+                    <div class="role">
+                        Client: Mizuho Americas
+                    </div>
+
+                    <div class="duration">
+                        Mar 2025 – Jan 2026
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Architected Fedwire Funds Service integration
+                            via FedLine Advantage aligned with ISO 20022.
+                        </li>
+
+                        <li>
+                            Designed CBPR+ to Fedwire payment transformation
+                            and enrichment engine.
+                        </li>
+
+                        <li>
+                            Implemented pacs.008 and pacs.009
+                            message processing pipelines.
+                        </li>
+
+                        <li>
+                            Integrated FircoSoft AML screening
+                            for sanctions and compliance validation.
+                        </li>
+
+                        <li>
+                            Implemented business decisioning
+                            using Drools rules engine.
+                        </li>
+
+                        <li>
+                            Designed resilient queue-driven processing
+                            with auditability and recovery mechanisms.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- INTUIT -->
+
+                <div class="experience">
+
+                    <div class="role">
+                        Client: Intuit Inc.
+                    </div>
+
+                    <div class="duration">
+                        Jan 2024 – Mar 2025
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Architected and developed
+                            FedNow Funds Service Connector
+                            with full ISO 20022 compliance.
+                        </li>
+
+                        <li>
+                            Built a complete FedNow Service Simulator
+                            supporting transaction lifecycle testing.
+                        </li>
+
+                        <li>
+                            Designed high-throughput,
+                            low-latency concurrent processing architecture.
+                        </li>
+
+                        <li>
+                            Implemented Customer Credit Transfer,
+                            Payment Return,
+                            Return Request,
+                            Status Request,
+                            Participant Broadcast
+                            and FedNow Broadcast flows.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            
+            
+            <!-- ====================================== -->
+            <!-- BRILLIO TECHNOLOGIES -->
+            <!-- ====================================== -->
+
+            <div class="experience">
+
+                <div class="company">
+                    Brillio Technologies
+                </div>
+
+                <div class="role">
+                    Software Development Lead
+                </div>
+
+                <div class="duration">
+                    Jan 2021 – Jan 2024 | Pune, India
+                </div>
+
+                <ul>
+
+                    <li>
+                        Integrated mutual fund trading workflows
+                        into enterprise Order Management Systems (OMS).
+                    </li>
+
+                    <li>
+                        Developed DTCC file integrations for
+                        automated financial data exchange.
+                    </li>
+
+                    <li>
+                        Implemented DCCS mutual fund
+                        trade processing workflows.
+                    </li>
+
+                    <li>
+                        Built dividend reinvestment processing
+                        for automated client investments.
+                    </li>
+
+                    <li>
+                        Designed Kafka-based event-driven
+                        architecture for trade processing.
+                    </li>
+
+                    <li>
+                        Developed REST APIs and network automation
+                        solutions for telecom platforms.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ====================================== -->
+            <!-- DUBAI -->
+            <!-- ====================================== -->
+
+            <div class="experience">
+
+                <div class="company">
+                    Strategic Design IT Infrastructure LLC
+                </div>
+
+                <div class="role">
+                    Senior Software Engineer
+                </div>
+
+                <div class="duration">
+                    Nov 2018 – Jan 2021 | Dubai, UAE
+                </div>
+
+                <ul>
+
+                    <li>
+                        Designed and developed a Face Recognition
+                        Platform for security agencies.
+                    </li>
+
+                    <li>
+                        Built Open Source Intelligence (OSINT)
+                        applications for data visualization
+                        and intelligence gathering.
+                    </li>
+
+                    <li>
+                        Developed forensic Voice Recognition
+                        Browser for voice analytics.
+                    </li>
+
+                    <li>
+                        Implemented secure chat applications
+                        using Openfire and JavaFX.
+                    </li>
+
+                    <li>
+                        Built JMS-based Data Transfer APIs
+                        using Apache ActiveMQ.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ====================================== -->
+            <!-- EGYPT -->
+            <!-- ====================================== -->
+
+            <div class="experience">
+
+                <div class="company">
+                    Secez Services
+                </div>
+
+                <div class="role">
+                    Senior Software Engineer
+                </div>
+
+                <div class="duration">
+                    Jan 2017 – Nov 2018 | Cairo, Egypt
+                </div>
+
+                <ul>
+
+                    <li>
+                        Developed distributed Voice Forensic Systems
+                        supporting speaker, language,
+                        keyword and gender detection.
+                    </li>
+
+                    <li>
+                        Built Unified Monitoring Systems
+                        for intercepted communication monitoring.
+                    </li>
+
+                    <li>
+                        Designed real-time mapping and
+                        visualization platforms.
+                    </li>
+
+                    <li>
+                        Developed proprietary voice processing APIs
+                        and audit services.
+                    </li>
+
+                    <li>
+                        Built satellite communication
+                        monitoring applications.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ====================================== -->
+            <!-- SKILL LOTTO -->
+            <!-- ====================================== -->
+
+            <div class="experience">
+
+                <div class="company">
+                    Skill Lotto Solutions Pvt Ltd
+                </div>
+
+                <div class="role">
+                    Software Engineer
+                </div>
+
+                <div class="duration">
+                    Aug 2014 – Dec 2016 | Gurugram, India
+                </div>
+
+                <ul>
+
+                    <li>
+                        Developed financial accounting
+                        software using Core Java.
+                    </li>
+
+                    <li>
+                        Built lottery gaming platforms
+                        using JavaFX.
+                    </li>
+
+                    <li>
+                        Implemented multithreaded enterprise
+                        desktop applications.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ====================================== -->
+            <!-- EDUCATION -->
+            <!-- ====================================== -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    Education
+                </div>
+
+                <div class="education-card">
+
+                    <h4>
+                        Bachelor of Technology
+                    </h4>
+
+                    <p>
+                        Computer Science & Engineering
+                    </p>
+
+                    <p>
+                        U.P. Technical University
+                        | 2010 – 2014
+                    </p>
+
+                </div>
+
+                <div class="education-card">
+
+                    <h4>
+                        Intermediate
+                    </h4>
+
+                    <p>
+                        Amarnath Vidya Ashram,
+                        Mathura | 2009 – 2010
+                    </p>
+
+                </div>
+
+                <div class="education-card">
+
+                    <h4>
+                        High School
+                    </h4>
+
+                    <p>
+                        Amarnath Vidya Ashram,
+                        Mathura | 2007 – 2008
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ====================================== -->
+            <!-- CERTIFICATIONS -->
+            <!-- ====================================== -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    Certifications
+                </div>
+
+                <ul>
+
+                    <li>
+                        Cryptography & Cyber Security Training
+                        – IIT Kharagpur
+                    </li>
+
+                    <li>
+                        Cyber Security Professional Training
+                        – CyberCure Solutions
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ====================================== -->
+            <!-- ACHIEVEMENTS -->
+            <!-- ====================================== -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    Achievements
+                </div>
+
+                <ul>
+                    <li>
+                        Recipient of the Top Talent Award at Persistent Systems
+                        for two consecutive years (2024–25 and 2025–26).
+                    </li>
+
+                    <li>
+                        Exhibitor at Egypt Defence Expo (EDEX 2018)
+                    </li>
+
+                    <li>
+                        Exhibitor at Dubai Technology Expo (2019)
+                    </li>
+
+                    <li>
+                        Architected enterprise-grade FedNow
+                        and Fedwire payment platforms.
+                    </li>
+
+                    <li>
+                        Delivered projects across India,
+                        UAE, Egypt and global banking clients.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ====================================== -->
+            <!-- INTERNATIONAL EXPERIENCE -->
+            <!-- ====================================== -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    International Experience
+                </div>
+
+                <div class="badge">India</div>
+                <div class="badge">United Arab Emirates</div>
+                <div class="badge">Egypt</div>
+                <div class="badge">Global Banking Clients</div>
+
+            </div>
+
+        </main>
+
+    </div>
+    
+
 </div>
 
-<script>
-    // Logic to update greeting based on time of day
-    function updateGreeting() {
-        const greetingText = document.getElementById('greeting-text');
-        const greetingIcon = document.getElementById('greeting-icon');
-        const currentHour = new Date().getHours();
-
-        if (currentHour < 12) {
-            greetingText.textContent = "Good Morning!";
-            greetingIcon.textContent = "🌅";
-        } else if (currentHour < 18) {
-            greetingText.textContent = "Good Afternoon!";
-            greetingIcon.textContent = "☀️";
-        } else {
-            greetingText.textContent = "Good Evening!";
-            greetingIcon.textContent = "🌙";
-        }
-    }
-
-    // Execute function immediately on load
-    updateGreeting();
-</script>
-
 </body>
+
 </html>
