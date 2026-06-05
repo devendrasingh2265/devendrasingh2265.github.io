@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        /* Modern, responsive styling setup */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74abe2, #5563c1);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        /* Centered greeting card container */
+        .greeting-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+        }
+
+        .icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="greeting-card">
+    <!-- The icon and text will update dynamically via JavaScript -->
+    <div class="icon" id="greeting-icon">👋</div>
+    <h1 id="greeting-text">Hello!</h1>
+    <p id="greeting-subtext">Welcome to your dashboard. Have an amazing day ahead!</p>
+</div>
+
+<script>
+    // Logic to update greeting based on time of day
+    function updateGreeting() {
+        const greetingText = document.getElementById('greeting-text');
+        const greetingIcon = document.getElementById('greeting-icon');
+        const currentHour = new Date().getHours();
+
+        if (currentHour < 12) {
+            greetingText.textContent = "Good Morning!";
+            greetingIcon.textContent = "🌅";
+        } else if (currentHour < 18) {
+            greetingText.textContent = "Good Afternoon!";
+            greetingIcon.textContent = "☀️";
+        } else {
+            greetingText.textContent = "Good Evening!";
+            greetingIcon.textContent = "🌙";
+        }
+    }
+
+    // Execute function immediately on load
+    updateGreeting();
+</script>
+
+</body>
+</html>
